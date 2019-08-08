@@ -6,4 +6,4 @@ canMsgTimetable = canMessageImport('log_0703_radars.asc', 'Vector', 'OutputForma
 %save log_0703_radars.mat canMsgTimetable;
 canMsgs = canMessageReplayBlockStruct(canMsgTimetable);
 save log_0703_radars_replay.mat canMsgs;
-whos %%
+whos
