@@ -3,7 +3,7 @@ clear
 clc
 
 % Sample time
-sampleTime = 0.040;
+sampleTime = 0.040;     % 40 ms
 
 % Sensors location and orientation
 sensorLocationConfig = [hex2dec('00')   hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00');
