@@ -2,10 +2,8 @@ close all
 clear
 clc
 
-canMsgTimetable = canMessageImport('canalyzerLog0703_radars.asc', 'Vector', 'OutputFormat', 'timetable');
-%save log_0703_radars.mat canMsgTimetable;
-canMsgs = canMessageReplayBlockStruct(canMsgTimetable);
-save canalyzerLog0703_radars.mat canMsgs;
+% Sample time
+sampleTime = 0.040;
 
 % Sensors location and orientation
 sensorLocationConfig = [hex2dec('00')   hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00')    hex2dec('00');
